@@ -1,0 +1,11 @@
+<button @onclick="OnClick" class="rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">
+    @btnText
+</button>
+
+@code {
+    [Parameter]
+    public string btnText { get; set; } = "Button Text";
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+}
