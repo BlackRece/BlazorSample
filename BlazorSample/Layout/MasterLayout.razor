@@ -1,0 +1,21 @@
+@inherits LayoutComponentBase
+
+<div class="flex h-screen bg-gray-100">
+    <div class="w-64 bg-gradient-to-r from-blue-400 to-blue-600 text-white flex-shrink-0">
+        <div class="h-full p-4">
+            <h6>NavMenu</h6>
+            <NavMenu/>
+        </div>
+    </div>
+
+    <div class="flex flex-col flex-grow overflow-y-auto">
+        <Header />
+
+        <article class="content px-4 py-8 flex-grow">
+            <h6>Body</h6>
+            @Body
+        </article>
+
+        <Footer />
+    </div>
+</div>
